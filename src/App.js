@@ -8,11 +8,22 @@ function App() {
   // hooks.  You'll need one for the home score and another for the away
   //  score.
 
+ let beginning = 0
+
+  const homeNumber = useState(beginning);
+  const homeNum = homeNumber[0];
+  const homeCount = homeNumber[1];
+
+  const awayNumber = useState(beginning);
+  const awayNum = awayNumber[0];
+  const awayCount = awayNumber[1];
+   
   
-    const homeNumber = 0;
-    const [homeNum, homeCount] = useState(homeNumber);
-    const awayNumber = 0;
-    const [awayNum, awayCount] = useState(awayNumber);
+    // const homeNumber = 12;
+    // const [homeNum, homeCount] = useState(homeNumber);
+    // const awayNumber = 2;
+    // const [awayNum, awayCount] = useState(awayNumber);
+
     
    console.log(homeCount);
    console.log(homeNum);
